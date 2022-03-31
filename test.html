@@ -4,7 +4,7 @@
   <title></title>
   <script language="javascript" type="text/javascript">
         function OnLinkClick() {
-            if (window.webkit.messageHandlers != undefined) {
+            if (window.webkit != undefined) {
                 window.webkit.messageHandlers.sendToNative.postMessage("String");
                 console.log("webkit");
             }
